@@ -25,8 +25,8 @@ def get_conn():
         password=DB_PASSWORD,
         database=DB_NAME,
         port=DB_PORT,
-        ssl_verify_cert=True,
-        ssl_verify_identity=True,
+        ssl_disabled=False,
+        ssl_verify_cert=False,
         connection_timeout=15
     )
 
