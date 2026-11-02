@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Community — SkillSwap</title>
+  <link rel="stylesheet" href="/static/css/styles.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/index.html" class="nav-brand">SkillSwap</a>
+      <div class="nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/community.html" class="active">Community</a>
+        <button class="btn btn-ghost btn-sm" onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-wide">
+
+    <div class="page-header">
+      <h1>Your Matches</h1>
+      <p class="text-muted text-sm">Sorted by best skill match</p>
+    </div>
+
+    <div id="matches-grid" class="matches-grid">
+      <div class="loading">
+        <div class="spinner"></div>
+        <p>Finding your matches…</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    &copy; 2025 SkillSwap
+  </footer>
+
+  <script src="/static/js/config.js"></script>
+  <script src="/static/js/auth.js"></script>
+  <script src="/static/js/api.js"></script>
+  <script src="/static/js/community.js"></script>
+</body>
+</html>
